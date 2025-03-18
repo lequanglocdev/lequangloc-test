@@ -9,7 +9,7 @@ type PostDetailProps = {
 const PostDetailPage = ({ params }: PostDetailProps) => {
   const { slug } = params;
 
-  return <PostDetail slug={slug} />;
+  return <PostDetail params={params} />;
 };
 
 export default PostDetailPage;
