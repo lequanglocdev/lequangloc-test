@@ -13,9 +13,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { ChevronUp, ChevronDown } from "lucide-react";
 interface PostDetailProps {
-  params: {
-    slug: string;
-  };
+  slug: string;
 }
 import { FaQuoteLeft } from "react-icons/fa";
 import PostCard from "@/app/posts/posCardList/postCard/PostCard";
@@ -54,10 +52,9 @@ const cardData = [
     slug: "#",
   },
 ];
-export const PostDetail: React.FC<PostDetailProps> = ({ params }) => {
-  const { slug } = params;
+export const PostDetail: React.FC<PostDetailProps> = ({ slug }) => {
   const [isOpen, setIsOpen] = useState(true);
-  console.log(slug);
+ console.log("Slug:", slug); 
   return (
     <div className="w-full">
       <div className="flex  justify-start items-start mt-4">
