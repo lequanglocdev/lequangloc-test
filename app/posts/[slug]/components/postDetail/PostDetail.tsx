@@ -33,7 +33,7 @@ const cardData = [
     title: "Tối ưu chuỗi cung ứng bằng công nghệ AI",
     date: "20/11/2022",
     readTime: "8 phút",
-    slug: "#",
+    slug: "tai-sao-bom-quan-trong",
   },
   {
     image: "/images/post.png",
@@ -41,7 +41,7 @@ const cardData = [
     title: "Tối ưu chuỗi cung ứng bằng công nghệ AI",
     date: "20/11/2022",
     readTime: "8 phút",
-    slug: "#",
+    slug: "tai-sao-bom-quan-trong",
   },
   {
     image: "/images/post.png",
@@ -49,7 +49,7 @@ const cardData = [
     title: "Tối ưu chuỗi cung ứng bằng công nghệ AI",
     date: "20/11/2022",
     readTime: "8 phút",
-    slug: "#",
+    slug: "tai-sao-bom-quan-trong",
   },
 ];
 export const PostDetail: React.FC<PostDetailProps> = ({ slug }) => {

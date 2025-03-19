@@ -1,15 +1,16 @@
 import { PostDetail } from "./components/postDetail/PostDetail";
 
-interface PostDetailPageProps {
-  params: {
-    slug: string;
-  };
+interface PageProps {
+  params: { slug: string };
 }
 
-const PostDetailPage = async ({ params }: PostDetailPageProps) => {
-  const { slug } = await params;
+export default function PostDetailPage({ params }: PageProps) {
+  const { slug } = params as { slug: string };
+
+  if (!slug) {
+    return <div>Không tìm thấy bài viết</div>;
+  }
 
   return <PostDetail slug={slug} />;
-};
+}
 
-export default PostDetailPage;
